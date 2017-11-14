@@ -76,7 +76,6 @@
     }
   }
 </script>
-
 <style rel="stylesheet/css" scoped>
   
   .control-wrapper a{
@@ -109,12 +108,15 @@
 
 
   .slide-show {
+    margin-left:50px;
+    margin-right:50px;
+    border-radius:20px;
     position: relative;
     overflow: hidden;
   }
   .slide-ul {
     width: 100%;
-    height: 600px;
+    height: 500px;
   }
   .slide-ul li {
     position: absolute;

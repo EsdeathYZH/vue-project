@@ -158,17 +158,17 @@ hr {
 }
 
 .navbar-fixed-top .navbar-nav > li > a:hover{
-	background:#7D26CD;	
+	background: #2bb8ff;	
 	color:#fff;
 }
 
 .navbar-fixed-top {
   border: none;
-  background: #912CEE;
+  background: #0BA9F9;
 }
 
 .navbar-fixed-top .navbar-brand {
-  font-size: 36px;
+  font-size: 44px;
   line-height: 30px;
   color: #fff;
 }
@@ -179,7 +179,7 @@ hr {
 .navbar-fixed-top .navbar-nav > .open > a,
 .navbar-fixed-top .navbar-nav > .open > a:hover,
 .navbar-fixed-top .navbar-nav > .open > a:focus {
-  background-color: #B23AEE;
+  background-color: #2bb8ff;
   color: #fff;
 }
 
