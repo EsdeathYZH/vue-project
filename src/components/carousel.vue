@@ -8,11 +8,24 @@
         </a>
       </li>
     </transition-group>
-
     <div class="control-wrapper">
       <a class="prev" @click="goto(prevIndex)"></a>
       <a class="next" @click="goto(nextIndex)"></a>
     </div>
+    <div class="avtivity" >
+        <div class="col-md-3 text-center">
+          <button id="join" class="btn btn-primary ">报名活动</button>
+        </div>
+        <div class="col-md-3 text-center">
+          <button id="create" class="btn btn-primary ">发布活动</button>
+        </div>
+        <div class="col-md-3 text-center">
+          <button id="create" class="btn btn-primary ">发布活动</button>
+        </div>
+        <div class="col-md-3 text-center">
+          <button id="create" class="btn btn-primary ">发布活动</button>
+        </div>
+      </div>
   </div>
 </template>
 
@@ -77,7 +90,23 @@
   }
 </script>
 <style rel="stylesheet/css" scoped>
-  
+  .avtivity{
+    display: inline-block;
+    position: absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:100px;
+    margin:0px;
+    padding:0px;
+  }
+  .col-md-3{
+    margin:0px;
+    padding:0px;
+  }
+  button{
+    border-radius: 0px;
+  }
   .control-wrapper a{
     display: inline-block;
     position: absolute;
@@ -113,6 +142,7 @@
     border-radius:20px;
     position: relative;
     overflow: hidden;
+    padding-bottom: 0px;
   }
   .slide-ul {
     width: 100%;

@@ -1,19 +1,20 @@
 <template>
   <div id="app">
+    <navbar/>
     <jumbotron/>
     <carousel/>
-    <HelloWorld/>
+    <activity/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
+import activity from './components/activity'
 import carousel from './components/carousel'
 import jumbotron from './components/jumbotron'
 export default {
   name: 'app',
   components: {
-    HelloWorld,
+    activity,
     carousel,
     jumbotron
   }
