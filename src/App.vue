@@ -1,29 +1,32 @@
 <template>
   <div id="app">
     <navbar/>
-    <jumbotron/>
     <carousel/>
-    <activity/>
+    <jumbotron/>
+    <student/>
+    <problems/>
   </div>
 </template>
 
 <script>
-import activity from './components/activity'
 import carousel from './components/carousel'
 import jumbotron from './components/jumbotron'
+import student from './components/student'
+import problems from './components/problems'
 export default {
   name: 'app',
   components: {
-    activity,
     carousel,
-    jumbotron
+    jumbotron,
+    student,
+    problems
   }
 }
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'Times New Roman', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

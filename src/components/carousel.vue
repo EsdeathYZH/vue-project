@@ -14,16 +14,16 @@
     </div>
     <div class="avtivity" >
         <div class="col-md-3 text-center">
-          <button id="join" class="btn btn-primary ">报名活动</button>
+          <button id="join" class="fadeInDown btn btn-primary ">报名活动</button>
         </div>
         <div class="col-md-3 text-center">
-          <button id="create" class="btn btn-primary ">发布活动</button>
+          <button id="create" class="fadeInDown btn btn-primary ">发布活动</button>
         </div>
         <div class="col-md-3 text-center">
-          <button id="create" class="btn btn-primary ">发布活动</button>
+          <button id="comment" class="fadeInDown btn btn-primary ">评价活动</button>
         </div>
         <div class="col-md-3 text-center">
-          <button id="create" class="btn btn-primary ">发布活动</button>
+          <button id="back" class="fadeInDown btn btn-primary ">活动回顾</button>
         </div>
       </div>
   </div>
@@ -102,10 +102,12 @@
   }
   .col-md-3{
     margin:0px;
-    padding:0px;
   }
   button{
+    padding:20px 100px 20px 100px;
+    font-size: 20px;
     border-radius: 0px;
+    background-color: transparent;
   }
   .control-wrapper a{
     display: inline-block;

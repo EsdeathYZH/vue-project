@@ -698,7 +698,11 @@ footer {
 	border-radius:6px;
 	padding:5px 20px;
 }
-
+.form-inline .form-group input[type="file"]{
+  margin-top:10px;
+  border-radius:0px;
+  padding:10px 20px 0px 10px ;
+}
 .sub-footer form {
 	margin-top:60px;
 	margin-bottom:30px;

@@ -27,6 +27,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .container{
+  margin-top: 30px;
 }
 #instruction{
   padding-left: 150px;
