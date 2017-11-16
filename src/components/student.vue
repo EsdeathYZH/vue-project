@@ -1,8 +1,8 @@
 <template>
    <div id="student" class="container">
     <div id="student-title"class="text-center">
-        <h3><strong>学员</strong></h3>
-        <p>加入训练营成为荣耀之路的学员！</p>
+        <h1>学员</h1>
+        <p>加入训练营,成为荣耀之路的学员！</p>
     </div>
     <table class="table table-bordered table-striped text-center">
         <thead>
@@ -65,11 +65,13 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 #student{
-  width: 100%;
-  padding:0px 50px 0px 50px;
-  margin: 0px 0px 0px 0px;
+  padding-top:50px;
+  padding-bottom: 20px;
 }
-
+h1{
+  color:#000;
+  padding:10px;
+}
 #insert{
   margin-top: 0px;
   background-color: #2bb8ff;

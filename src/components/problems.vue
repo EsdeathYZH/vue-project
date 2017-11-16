@@ -1,7 +1,7 @@
 <template>
  <div id="problems" class="container">
 	 <div id="student-title"class="text-center">
-	        <h3><strong>题库</strong></h3>
+	        <h1>题库</h1>
 	        <p>学员根据自身的水平选择题目，具体加分规则请参考荣耀之路规则</p>
     </div>
   	<ul>
@@ -54,6 +54,14 @@ export default {
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+#problems{
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+h1{
+  color:#000;
+  padding:10px;
+}
 li{
 	font-size: 14px; 
 }

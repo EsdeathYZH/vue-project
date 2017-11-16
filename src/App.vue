@@ -1,10 +1,13 @@
 <template>
   <div id="app">
     <navbar/>
-    <carousel/>
     <jumbotron/>
+    <carousel/>
     <student/>
     <problems/>
+    <submit/>
+    <major/>
+    <homework/>
   </div>
 </template>
 
@@ -13,13 +16,19 @@ import carousel from './components/carousel'
 import jumbotron from './components/jumbotron'
 import student from './components/student'
 import problems from './components/problems'
+import submit from './components/submit'
+import major from './components/major'
+import homework from './components/homework'
 export default {
   name: 'app',
   components: {
     carousel,
     jumbotron,
     student,
-    problems
+    problems,
+    submit,
+    major,
+    homework
   }
 }
 </script>
