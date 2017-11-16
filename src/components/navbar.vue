@@ -13,17 +13,16 @@
       <div class="collapse navbar-collapse navbar-right">
         <ul class="nav navbar-nav">
           <li class="active"><a href="#header">首页</a></li>
-          <li><a href="#feature">活动</a></li>
-          <li><a href="#gallery">题库</a></li>
-          <li><a href="#pricing">学员</a></li>
-          <li><a href="#our-team">我们的团队</a></li>
-          <li><a href="#contact">联系我们</a></li>
+          <li><a href="#carousel">活动</a></li>
+          <li><a href="#student">学员</a></li>
+          <li><a href="#problems">题库</a></li>
+          <li><a href="#major">部门方向</a></li>
+          <li><a href="#submit">提交代码</a></li>
+          <li><a href="#homework">作品展示</a></li>
         </ul>
       </div>
     </div>
-    <!--/.container-->
   </nav>
-  <!--/nav-->
 </template>
 
 <script>

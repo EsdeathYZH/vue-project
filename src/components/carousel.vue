@@ -1,6 +1,6 @@
 
 <template>
-  <div class="slide-show" @mouseover="clearInv" @mouseout="runInv">
+  <div id="carousel" class="slide-show" @mouseover="clearInv" @mouseout="runInv">
     <transition-group tag="ul" class='slide-ul' :name="move">
       <li v-for="(item , index ) in slides" :key="index" v-show="index===nowIndex">
         <a :href="item.href" :target="_blank">
@@ -14,7 +14,7 @@
     </div>
     <div class="avtivity" >
         <div class="col-md-3 text-center">
-          <button id="join" class="fadeInDown btn btn-primary ">报名活动</button>
+          <button id="join" class="fadeInUp btn btn-primary ">报名活动</button>
         </div>
         <div class="col-md-3 text-center">
           <button id="create" class="fadeInDown btn btn-primary ">发布活动</button>
@@ -31,6 +31,7 @@
 
 <script>
   export default {
+    name:'carousel',
     data () {
       return {
         nowIndex: 0,
@@ -89,7 +90,17 @@
     }
   }
 </script>
-<style rel="stylesheet/css" scoped>
+<style scoped>
+  button{
+    padding:20px 100px 20px 100px;
+    font-size: 20px;
+    border-radius: 0px;
+    background-color: transparent;
+  }
+  button :hover{
+    background-color: #2bb8ff;
+    opacity: 0.5;
+  }
   .avtivity{
     display: inline-block;
     position: absolute;
@@ -100,14 +111,9 @@
     margin:0px;
     padding:0px;
   }
-  .col-md-3{
-    margin:0px;
-  }
-  button{
-    padding:20px 100px 20px 100px;
-    font-size: 20px;
-    border-radius: 0px;
-    background-color: transparent;
+  .col-md-3 :hover{
+    background-color:  rgb(43,184,255,0.2);
+    
   }
   .control-wrapper a{
     display: inline-block;
@@ -136,8 +142,6 @@
   .next:hover {
     background-position: -42px 50%;
   }
-
-
   .slide-show {
     margin-left:50px;
     margin-right:50px;

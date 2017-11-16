@@ -44,7 +44,7 @@
 	      </figure>
 	      <figure >
 	        <div class="col-md-3 wow fadeInUp" data-wow-offset="0" data-wow-delay="0.3s">
-	          <a href="static/img/work/6.jpg" ">
+	          <a href="static/img/work/6.jpg" >
 			  <img src="static/img/work/6.jpg" class="img-responsive" alt="">
 			  </a>
 	        </div>
@@ -84,14 +84,14 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 #homework{
-  padding-top:50px;
+  padding-top:20px;
   padding-bottom: 20px;
 }
-h1{
+#homework h1{
   color:#000;
   padding:10px;
 }
-.row{
+#homework .row{
 	padding-top: 40px;
 }
 figure .col-md-3 a img {
