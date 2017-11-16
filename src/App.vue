@@ -8,6 +8,7 @@
     <submit/>
     <major/>
     <homework/>
+    <team/>
   </div>
 </template>
 
@@ -19,6 +20,7 @@ import problems from './components/problems'
 import submit from './components/submit'
 import major from './components/major'
 import homework from './components/homework'
+import team from './components/our-team'
 export default {
   name: 'app',
   components: {
@@ -28,7 +30,8 @@ export default {
     problems,
     submit,
     major,
-    homework
+    homework,
+    team
   }
 }
 </script>

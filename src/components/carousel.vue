@@ -91,6 +91,28 @@
   }
 </script>
 <style scoped>
+  #carousel{
+    margin-left:50px;
+    margin-right:50px;
+    border-radius:20px;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 0px;
+  }
+  #carousel .slide-ul {
+    width: 100%;
+    height: 500px;
+  }
+  #carousel .slide-ul li {
+    position: absolute;
+    left:0;
+    width: 100%;
+    height: 100%;
+  }
+  #carousel .slide-ul li img {
+    width: 100%;
+    height: 100%;
+  }
   button{
     padding:20px 100px 20px 100px;
     font-size: 20px;
@@ -98,8 +120,8 @@
     background-color: transparent;
   }
   button :hover{
-    background-color: #2bb8ff;
-    opacity: 0.5;
+    background-color:rgb(43,184,255,0.5);
+    
   }
   .avtivity{
     display: inline-block;
@@ -110,10 +132,6 @@
     height:100px;
     margin:0px;
     padding:0px;
-  }
-  .col-md-3 :hover{
-    background-color:  rgb(43,184,255,0.2);
-    
   }
   .control-wrapper a{
     display: inline-block;
@@ -141,28 +159,6 @@
 
   .next:hover {
     background-position: -42px 50%;
-  }
-  .slide-show {
-    margin-left:50px;
-    margin-right:50px;
-    border-radius:20px;
-    position: relative;
-    overflow: hidden;
-    padding-bottom: 0px;
-  }
-  .slide-ul {
-    width: 100%;
-    height: 500px;
-  }
-  .slide-ul li {
-    position: absolute;
-    left:0;
-    width: 100%;
-    height: 100%;
-  }
-  .slide-ul li img {
-    width: 100%;
-    height: 100%;
   }
   .move-enter-active {
     transition: all 0.8s ease;
