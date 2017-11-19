@@ -85,7 +85,7 @@ export default {
 <style scoped>
 #our-team {
 	padding: 70px 30px 70px 30px;
-	background:#f4f4f4;
+	background:#fff;
 }
 #our-team h1{
 	color: #000;

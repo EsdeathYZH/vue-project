@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container wow fadeInDown" data-wow-offset="0" data-wow-delay="0.4s">
     <div class="jumbotron">
       <h1 class="text-center">{{welcome}}</h1>
       <h3>想成为编程大神吗？和我们一起完成任务、提升等级，踏上荣耀之路吧！</h3> 

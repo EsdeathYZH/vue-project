@@ -1,5 +1,5 @@
 <template>
- <div id="problems" class="container">
+ <div id="problems" class="container wow fadeInLeft" data-wow-offset="0" data-wow-delay="0.4s">
 	 <div id="student-title"class="text-center">
 	        <h1>题库</h1>
 	        <p>学员根据自身的水平选择题目，具体加分规则请参考荣耀之路规则</p>

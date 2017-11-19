@@ -1,5 +1,5 @@
 <template>
-   <div id="student" class="container">
+   <div id="student" class="container wow fadeInRight" data-wow-offset="0" data-wow-delay="0.4s">
     <div id="student-title"class="text-center">
         <h1>学员</h1>
         <p>加入训练营,成为荣耀之路的学员！</p>

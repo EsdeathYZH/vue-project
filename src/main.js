@@ -2,6 +2,14 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App'
+import carousel from './components/carousel'
+import homework from './components/homework'
+import jumbotron from './components/jumbotron'
+import major from './components/major'
+import student from './components/student'
+import problems from './components/problems'
+import team from './components/our-team'
+import submit from './components/submit'
 import navbar from './components/navbar'
 Vue.config.productionTip = false
 
@@ -17,3 +25,5 @@ new Vue({
 	template: '<navbar/>',
 	components:{navbar}
 })
+
+

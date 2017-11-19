@@ -21,6 +21,7 @@ import submit from './components/submit'
 import major from './components/major'
 import homework from './components/homework'
 import team from './components/our-team'
+import navbar from './components/navbar'
 export default {
   name: 'app',
   components: {
@@ -31,6 +32,7 @@ export default {
     submit,
     major,
     homework,
+    navbar,
     team
   }
 }

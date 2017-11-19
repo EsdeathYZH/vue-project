@@ -1,6 +1,6 @@
 
 <template>
-  <div id="carousel" class="slide-show" @mouseover="clearInv" @mouseout="runInv">
+  <div id="carousel" class="slide-show wow fadeInUp" data-wow-offset="0" data-wow-delay="0.6s" @mouseover="clearInv" @mouseout="runInv">
     <transition-group tag="ul" class='slide-ul' :name="move">
       <li v-for="(item , index ) in slides" :key="index" v-show="index===nowIndex">
         <a :href="item.href" :target="_blank">
@@ -35,7 +35,6 @@
     data () {
       return {
         nowIndex: 0,
-
         slides:[
           {
             src:"static/img/1.jpg",
@@ -50,7 +49,6 @@
             href:""
           }
         ],
-
         inv:3000,
         move:"move"
       }
