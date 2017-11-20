@@ -8,7 +8,6 @@ import jumbotron from './components/jumbotron'
 import major from './components/major'
 import student from './components/student'
 import problems from './components/problems'
-import team from './components/our-team'
 import submit from './components/submit'
 import navbar from './components/navbar'
 Vue.config.productionTip = false

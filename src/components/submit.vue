@@ -1,8 +1,9 @@
 <template>
 	<div id="submit" class="container">
-	    <div class="text-center">
+	    <div id="submit-message" class="text-center">
 	      <h1>提交你的代码</h1>
-	      <p>在下方提交你的代码，如有问题请联系管理员</p>
+	      <p v-show="sended==true">{{sendedMessage}}</p>
+	      <p v-show="sended!=true">{{unsendedMessage}}</p>
 	    </div>
 	    <div class="row">
 	      <div class="col-md-6 wow fadeInUp" data-wow-offset="0" data-wow-delay="0.4s">
@@ -17,9 +18,7 @@
 	      </div>
 
 	      <div class="col-md-6 wow fadeInUp" data-wow-offset="0" data-wow-delay="0.6s">
-	        <div id="sendmessage">Your message has been sent. Thank you!</div>
-	        <div id="errormessage"></div>
-	        <form action="" method="post" role="form" class="contactForm">
+	        <form  role="form" class="contactForm">
 	          <div class="form-group">
 	            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
 	            <div class="validation"></div>
@@ -36,9 +35,8 @@
 	            <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
 	            <div class="validation"></div>
 	          </div>
-
-	          <button type="submit" class="btn btn-theme">提交代码</button>
 	        </form>
+	        <button class="btn btn-theme" @click="sendmessage">提交代码</button>
 	      </div>
 	    </div>
 	</div>
@@ -48,10 +46,15 @@ export default {
   name: 'submit',
   data () {
     return {
-      
+      sended:false,
+      unsendedMessage:"在下方提交你的代码，如有问题请联系管理员",
+      sendedMessage:"你的代码已提交成功！",
     }
   },
   methods: {
+  	sendmessage(){
+  		this.sended=true;
+  	}
   }
 }
 </script>
@@ -72,8 +75,10 @@ export default {
 	margin-bottom:30px;
 	font-size:25px;
 }
-#submit p{
+#submit #submit-message p{
 	padding-bottom: 10px;
+	color: #7A67EE;
+	font-weight: bold;
 }
 .form-inline {
 	margin-top:15px;
