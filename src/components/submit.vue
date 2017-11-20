@@ -77,7 +77,7 @@ export default {
 }
 #submit #submit-message p{
 	padding-bottom: 10px;
-	color: #7A67EE;
+	color: #2bb8ff;
 	font-weight: bold;
 }
 .form-inline {

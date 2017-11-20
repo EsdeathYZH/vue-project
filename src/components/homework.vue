@@ -5,61 +5,19 @@
         <p>查看其他人的代码有助于你的提高</p>
       </div>
 		<div class="row">
-		<figure>
+		<figure v-for="item in slide1">
 		  <div class="col-md-3 wow fadeInUp" data-wow-offset="0" data-wow-delay="0.3s">
-		    <a href="static/mg/work/1.jpg">
-			<img src="static/img/work/1.jpg" class="img-responsive" alt="">
+		    <a :href="item.href">
+			<img :src="item.src" class="img-responsive" alt="">
 			</a>
 		  </div>
-		</figure>
-		<figure >
-		  <div class="col-md-3 wow fadeInUp" data-wow-offset="0" data-wow-delay="0.3s">
-		    <a href="static/img/work/2.jpg">
-			<img src="static/img/work/2.jpg" class="img-responsive" alt="">
-			</a>
-		  </div>
-		</figure>
-		<figure >
-		  <div class="col-md-3 wow fadeInDown" data-wow-offset="0" data-wow-delay="0.3s">
-		    <a href="static/img/work/3.jpg">
-			<img src="static/img/work/3.jpg" class="img-responsive" alt="">
-			</a>
-		  </div>
-		</figure>
-		<figure >
-		  <div class="col-md-3 wow fadeInDown" data-wow-offset="0" data-wow-delay="0.3s">
-		    <a href="static/img/work/4.jpg">
-			<img src="static/img/work/4.jpg" class="img-responsive" alt="">
-			</a>
-		  </div>
-		</figure>
+		  </figure>
 		</div>
 	    <div class="row">
-	      <figure >
+	      <figure v-for="item in slide2">
 	        <div class="col-md-3 wow fadeInUp" data-wow-offset="0" data-wow-delay="0.3s">
-	          <a href="static/img/work/5.jpg">
-				<img src="static/img/work/5.jpg" class="img-responsive" alt="">
-			  </a>
-	        </div>
-	      </figure>
-	      <figure >
-	        <div class="col-md-3 wow fadeInUp" data-wow-offset="0" data-wow-delay="0.3s">
-	          <a href="static/img/work/6.jpg" >
-			  <img src="static/img/work/6.jpg" class="img-responsive" alt="">
-			  </a>
-	        </div>
-	      </figure>
-	      <figure >
-	        <div class="col-md-3 wow fadeInDown" data-wow-offset="0" data-wow-delay="0.3s">
-	          <a href="static/img/work/7.jpg" >
-				<img src="static/img/work/7.jpg" class="img-responsive" alt="">
-			  </a>
-	        </div>
-	      </figure>
-	      <figure >
-	        <div class="col-md-3 wow fadeInDown" data-wow-offset="0" data-wow-delay="0.3s">
-	          <a href="static/img/work/8.jpg" >
-				<img src="static/img/work/8.jpg" class="img-responsive" alt="">
+	          <a :href="item.href">
+				<img :src="item.src" class="img-responsive" alt="">
 			  </a>
 	        </div>
 	      </figure>
@@ -72,7 +30,42 @@ export default {
   name: 'homework',
   data () {
     return {
-      
+      slide1:[
+          {
+            src:"static/img/work/1.jpg",
+            href:"static/img/work/1.jpg"
+          },
+          {
+            src:"static/img/work/2.jpg",
+            href:"static/img/work/2.jpg"
+          },
+          {
+            src:"static/img/work/3.jpg",
+            href:"static/img/work/3.jpg"
+          },
+          {
+            src:"static/img/work/4.jpg",
+            href:"static/img/work/4.jpg"
+          }
+      ],
+      slide2:[
+          {
+            src:"static/img/work/5.jpg",
+            href:"static/img/work/5.jpg"
+          },
+          {
+            src:"static/img/work/6.jpg",
+            href:"static/img/work/6.jpg"
+          },
+          {
+            src:"static/img/work/7.jpg",
+            href:"static/img/work/7.jpg"
+          },
+          {
+            src:"static/img/work/8.jpg",
+            href:"static/img/work/8.jpg"
+          }
+      ]
     }
   },
   methods: {
